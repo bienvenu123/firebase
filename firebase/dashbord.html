@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/dash.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>
+          <b
+            ><a href="/index.html"
+              >this<span> is</span> Firebase Demo</a
+            ></b
+          >
+        </h1>
+      </div>
+      <!-- <ul>
+          <li><a class="btn" href="contact.html">Home</a></li>
+      </ul> -->
+    </nav>
+
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="/index.html">
+            <i class="fa-solid fa-house"></i>
+            <span class="nav-item">Home</span>
+          </a>
+        </li>
+        <li>
+    
+        <li>
+          <a href="/login.html" class="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="nav-item">logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section>
+      <div class="header">
+        <div class="table_header">
+          <p>
+            <a href="index.html"><button class="search">+add new</button></a>
+          </p>
+          <div>
+            <input type="text" placeholder="Search user......" />
+            <button class="search">search</button>
+          </div>
+        </div>
+        <div class="table_section">
+          <table>
+            <thead>
+              <tr>
+                <th>First name</th>
+                <th>last Name</th>
+                <th>Email</th>
+                <th>Joining date</th>
+                <th>action</th>
+              </tr>
+            </thead>
+            <tbody class="tablebody" id="tablebody">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+     <script src="./scripts/firebase.js"></script>
+     <script src="./scripts/auth.js"></script>
+    <script src="./scripts/users.js"></script>
+  </body>
+</html>
